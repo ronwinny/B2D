@@ -1,0 +1,221 @@
+:root
+{
+    --red:#F04B4B;
+    --purple:#C732DF;
+    --white:#FAF9F9;
+    --gray:#aba4a470;
+    --font:'Inter', sans-serif;
+    --fw1:400;
+    --fw2:500;
+    --fw3:600;
+    font-size:62.5%;
+}
+
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:var(--font);
+}
+
+#container
+{
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(180deg,var(--red),var(--purple));
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+}
+
+#title
+{
+    display:flex;
+    
+    justify-content:center;
+}
+
+#title>h2 {
+    font-weight:var(--fw3);
+    font-size:calc(2vw + 4rem);
+    align-self:center;
+    color:var(--white);
+}
+
+#title>h1
+{
+    font-weight:var(--fw3);
+    font-size:calc(2vw + 6rem);
+    color:var(--white);
+}
+
+
+
+#calculate>form{
+    min-height:20rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.bd
+{
+    width:70%;
+    height:calc(1vw + 2.8rem);
+    padding-left:1rem;
+    border:none;
+    font-size:calc(1vw + 1.2rem);
+}
+
+.bd::placeholder
+{
+    color:rgb(175, 174, 174);
+    font-size:calc(1rem + 1vw);
+}
+
+button
+{
+    width:calc(1vw + 14rem);
+    border-radius:.4rem;
+    border:.1rem solid #3BFFB8;
+    box-shadow:.4rem .3rem 0rem rgba(219, 218, 218, 0.6),.4rem .5rem 0rem rgba(193, 191, 191, 0.6);
+    height:calc(1vw + 2.4rem);
+    background-color:var(--white);
+    font-weight:var(--fw2);
+    color:hsla(0, 14%, 30%, 0.739);
+    font-size:  150%;
+}
+
+button:active
+{
+    transform:scale(1.03);
+    background-image:repeating-linear-gradient(120deg,rgb(240, 240, 240) 0rem .5rem,rgb(213, 241, 190) .5rem 1rem);
+    /* color:#fff; */
+}
+
+#steps
+{
+    
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap:1rem;
+
+}
+
+#steps>p
+{
+    font-weight:var(--fw2);
+    color:hsl(0, 10%, 96%);
+    font-weight:var(--fw2);
+    font-size:200%;
+    align-self: center;
+}
+.textarea
+{
+    width:80vw;
+    min-height:calc(1vw + 10rem);
+    padding:calc(1vh + .8rem);
+    background-color:var(--white);
+    font-weight:var(fw2);
+    font-size:calc(1vw + 1rem);
+}
+
+@media screen and (min-width:600px) and (max-width:800px)
+{
+    .bd
+    {
+        width:calc(5vw + 50%);
+    }
+
+    
+    #calculate>form{
+        min-height:24rem;
+    }
+
+    button
+    {
+        width:calc(1vw + 18rem);
+
+    }
+
+    .textarea
+    {
+    width:60vw;
+
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1024px)
+{
+    .bd
+    {
+        width:calc(5vw + 42%);
+    }
+
+    #calculate>form{
+        min-height:28rem;
+    }
+
+    button
+    {
+        width:calc(1vw + 20rem);
+
+    }
+
+    .textarea
+    {
+    width:50vw;
+
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1500px)
+{
+    .bd
+    {
+        width:calc(5vw + 42%);
+    }
+
+    #calculate>form{
+        min-height:30rem;
+    }
+
+    button
+    {
+        width:calc(1vw + 22rem);
+
+    }
+
+    .textarea
+    {
+    width:50vw;
+
+    }
+}
+
+@media screen and (min-width:1500px)
+{
+    .bd
+    {
+        width:calc(5vw + 42%);
+    }
+
+    #calculate>form{
+        min-height:30rem;
+    }
+
+    button
+    {
+        width:calc(1vw + 22rem);
+
+    }
+
+    .textarea
+    {
+    width:50vw;
+
+    }
+}
