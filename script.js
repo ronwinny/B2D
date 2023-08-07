@@ -40,13 +40,14 @@ function errortest(num)
     str=""+num;
     let ar=str.split("");
     for(let number of ar)
-    {
-        if((number==1)|| (number==0))
+   {
+        if((number>1)|| (number<0) || (number>="a") || (number>="A"))
         {
-            return true
+            return false
         }
 
     }
-    return false;
+    return true;
+
 
 }
